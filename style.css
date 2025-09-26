@@ -1,0 +1,451 @@
+/* ===== General Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+:root {
+    --primary-color: #160b03;
+    --secondary-color: #f3961c;
+    --dark-color: #252525;
+    --white-color: #fff;
+    --light-gray-color: #f2f2f2;
+    --site-max-width: 1300px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Header + Navbar ===== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(blue,darkorange);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white-color);
+    border-radius: 18px;
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: #FFD700;
+}
+
+/* Logo */
+nav .NAVLOGO a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .NAVLOGO a img {
+    max-width: 55px;
+}
+
+nav .NAVLOGO a h2 {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* ===== Sections ===== */
+section {
+    min-height: 100vh;
+    background: linear-gradient(135deg, blue, darkorange, blueviolet);
+}
+
+.one {
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+
+.two {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    padding-top: 85px;
+    min-height: calc(100vh - 85px);
+    justify-content: space-between;
+}
+
+.two .three h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.two .three h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin-top: 8px;
+}
+
+.two .three p {
+    font-size: 20px;
+    font-weight: 350;
+    color: black;
+    margin: 24px 0 40px;
+    max-width: 70%;
+}
+
+.two .four button {
+    justify-content: space-between;
+    gap: 30px;
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #FFD700;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.two .four button:hover {
+    color: whitesmoke;
+    background: linear-gradient(135deg, blue, darkorange, blueviolet);
+    border-color: var(--white-color);
+}
+
+/* About Us */
+.about_us {
+    padding: 60px 20px 120px;
+    background: linear-gradient(135deg, blue, silver, blueviolet);
+}
+
+.six {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    max-width: var(--site-max-width);
+}
+
+.seven {
+    max-width: 45%;
+}
+
+.seven p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+/* Products Section */
+.p-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 40px 0;
+    text-align: center;
+    width: 100%;
+    background: white;
+}
+
+.p-one {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.p-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 95%;
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.p-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.p-three:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.p-three img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Why Us Section */
+.s-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, blue, darkorange, blueviolet);
+    gap: 50px;
+}
+
+.s-class h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.s-two {
+    display: flex;
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.s-two img {
+    border-radius: 20px;
+    box-shadow: 5px 3px 50px 10px darkred;
+}
+
+.s-two p {
+    display: block;
+    max-width: 750px;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* Gallery */
+.g-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0 80px 0;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(135deg, blue, silver, blueviolet);
+    height: 120vh;
+}
+
+.g-two {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    color: black;
+}
+
+.g-one div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: var(--site-max-width);
+}
+
+.g-one img {
+    max-width: 360px;
+    max-height: 270px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.g-one img:hover {
+    transform: scale(1.8);
+}
+
+/* Contact Us */
+.c-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0 60px 0;
+    width: 100%;
+    background: linear-gradient(skyblue,darkorange);
+}
+
+.c-one h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.c-two {
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.c-three label, .c-three input, .c-three .textarea, .c-three button {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 150%;
+    border-radius: 6px;
+}
+
+.c-three input {
+    font-size: 20px;
+}
+
+.c-three .textarea {
+    width: 150%;
+    height: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.c-three button {
+    width: 40%;
+    border-radius: 60px;
+}
+
+.c-four .c-five {
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.c-four .c-five h3 {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(blue,darkorange);
+    color: var(--white-color);
+    padding: 60px 20px;
+}
+
+.footer_section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer_section h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.footer_section .footer_logo a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--white-color);
+}
+
+.footer_section .footer_logo a img {
+    max-width: 55px;
+}
+
+.footer_section .footer_logo a h2 {
+    font-weight: 600;
+}
+
+.footer_section .useful_links ul li {
+    margin: 20px 0;
+}
+
+.footer_section .useful_links ul li a {
+    color: var(--white-color);
+    font-size: 17px;
+}
+
+.footer_section .useful_links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer_section .contact_us ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_section .contact_us ul li i {
+    font-size: 25px;
+}
+
+.footer_section .contact_us ul li span {
+    font-size: 17px;
+}
+
+.footer_section .follow_us i {
+    font-size: 26px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer_section .follow_us i:hover {
+    color: var(--secondary-color);
+}
+
+/* ======= Responsive CSS ======= */
+
+/* Tablet: width <= 1024px */
+@media (max-width: 1024px) {
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li a {
